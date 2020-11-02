@@ -1,0 +1,96 @@
+func andre(a []int, b []int) []int:
+0:
+	t0 = len(a)
+	t1 = len(b)
+	t2 = t0 > t1
+	if t2 goto 1 else 3
+1:
+	t3 = len(b)
+	t4 = make []int t3 t3
+	jump 2
+2:
+	t5 = phi [1: t4, 3: t13] #sorry
+	t6 = dilla(a, t5)
+	t7 = len(a)
+	t8 = len(b)
+	t9 = t7 + t8
+	t10 = make []int t9 t9
+	t11 = len(t10)
+	jump 4
+3:
+	t12 = len(a)
+	t13 = make []int t12 t12
+	jump 2
+4:
+	t14 = phi [2: -1:int, 5: t15]
+	t15 = t14 + 1:int
+	t16 = t15 < t11
+	if t16 goto 5 else 6
+5:
+	t17 = &t10[t15]
+	*t17 = 0:int
+	jump 4
+6:
+	jump 9
+7:
+	jump 12
+8:
+	t18 = len(t10)
+	t19 = t18 - 1:int
+	t20 = slice t10[:t19]
+	jump 15
+9:
+	t21 = phi [6: 0:int, 11: t32] #i
+	t22 = len(b)
+	t23 = t21 < t22
+	if t23 goto 7 else 8
+10:
+	t24 = t21 + t33
+	t25 = &t10[t24]
+	t26 = &a[t33]
+	t27 = *t26
+	t28 = &b[t21]
+	t29 = *t28
+	t30 = t27 * t29
+	*t25 = t30
+	t31 = t33 + 1:int
+	jump 12
+11:
+	t32 = t21 + 1:int
+	jump 9
+12:
+	t33 = phi [7: 0:int, 10: t31] #j
+	t34 = len(a)
+	t35 = t33 < t34
+	if t35 goto 10 else 11
+13:
+	t36 = &t10[t39]
+	t37 = *t36
+	t38 = t37 >= 10:int
+	if t38 goto 16 else 17
+14:
+	return t10
+15:
+	t39 = phi [8: 0:int, 17: t53] #x
+	t40 = len(t20)
+	t41 = t39 < t40
+	if t41 goto 13 else 14
+16:
+	t42 = t39 + 1:int
+	t43 = &t10[t42]
+	t44 = &t10[t39]
+	t45 = *t44
+	t46 = t45 / 10:int
+	t47 = *t43
+	t48 = t47 + t46
+	*t43 = t48
+	t49 = &t10[t39]
+	t50 = &t10[t39]
+	t51 = *t50
+	t52 = t51 % 10:int
+	*t49 = t52
+	jump 17
+17:
+	t53 = t39 + 1:int
+	jump 15
+

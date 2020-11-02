@@ -1,0 +1,70 @@
+func gza(a []int, b []int) []int:
+0:
+	t0 = len(a)
+	t1 = len(b)
+	t2 = guru(t0, t1)
+	t3 = t2 + 1:int
+	t4 = make []int t3 t3
+	t5 = new [1]int (slicelit)
+	t6 = &t5[0:int]
+	*t6 = 0:int
+	t7 = slice t5[:]
+	t8 = rakim(a, t7)
+	t9 = doom(a, t8)
+	t10 = t9 != -2:int
+	if t10 goto 1 else 2
+1:
+	t11 = new [1]int (slicelit)
+	t12 = &t11[0:int]
+	*t12 = 0:int
+	t13 = slice t11[:]
+	return t13
+2:
+	t14 = len(t4)
+	jump 3
+3:
+	t15 = phi [2: 0:int, 12: t31, 13: t31] #wu
+	t16 = phi [2: -1:int, 12: t17, 13: t17]
+	t17 = t16 + 1:int
+	t18 = t17 < t14
+	if t18 goto 4 else 5
+4:
+	t19 = len(a)
+	t20 = t17 < t19
+	if t20 goto 6 else 8
+5:
+	return t4
+6:
+	t21 = &a[t17]
+	t22 = *t21
+	jump 7
+7:
+	t23 = phi [6: t22, 8: 0:int] #a_i
+	t24 = len(b)
+	t25 = t17 < t24
+	if t25 goto 9 else 11
+8:
+	jump 7
+9:
+	t26 = &b[t17]
+	t27 = *t26
+	jump 10
+10:
+	t28 = phi [9: t27, 11: 0:int] #b_i
+	t29 = t23 + t28
+	t30 = t29 + t15
+	t31 = t30 / 10:int
+	t32 = t30 > 10:int
+	if t32 goto 12 else 13
+11:
+	jump 10
+12:
+	t33 = &t4[t17]
+	t34 = t30 % 10:int
+	*t33 = t34
+	jump 3
+13:
+	t35 = &t4[t17]
+	*t35 = t30
+	jump 3
+

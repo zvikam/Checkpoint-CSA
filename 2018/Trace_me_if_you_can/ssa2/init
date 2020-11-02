@@ -1,0 +1,16 @@
+func init():
+0:
+	t0 = *init$guard
+	if t0 goto 2 else 1
+1:
+	*init$guard = true:bool
+	t1 = bufio.init()
+	t2 = fmt.init()
+	t3 = math/rand.init()
+	t4 = os.init()
+	t5 = strconv.init()
+	t6 = strings.init()
+	jump 2
+2:
+	return
+

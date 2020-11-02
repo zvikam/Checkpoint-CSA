@@ -1,0 +1,289 @@
+======================================================
+[+] main.kendrick
+body:
+0:
+	t0 = len(a)
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+2:
+	t5 = &a[t3]
+	t6 = *t5
+	t7 = t1 + t6
+	jump 1
+1:
+	t1 = phi [0: 0:int, 2: t7] #damn
+	t2 = phi [0: -1:int, 2: t3]
+	t3 = t2 + 1:int
+	t4 = t3 < t0
+	if t4 goto 2 else 3
+3:
+	return t1

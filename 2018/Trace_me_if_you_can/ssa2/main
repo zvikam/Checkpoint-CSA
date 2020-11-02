@@ -1,0 +1,269 @@
+func main():
+0:
+	t0 = *os.Stdin
+	t1 = make io.Reader <- *os.File (t0)
+	t2 = bufio.NewReader(t1)
+	t3 = new [1]interface{} (varargs)
+	t4 = &t3[0:int]
+	t5 = make interface{} <- string ("Please insert input:"
+	*t4 = t5
+	t6 = slice t3[:]
+	t7 = fmt.Print(t6...)                                (n
+	t8 = (*bufio.Reader).ReadString(t2, 10:byte)
+	t9 = extract t8 #0
+	t10 = extract t8 #1
+	t11 = strings.Fields(t9)
+	t12 = len(t11)
+	t13 = make []int t12 t12
+	jump 3
+1:
+	t14 = &t13[t50]
+	t15 = &t11[t50]
+	t16 = *t15
+	t17 = strconv.Atoi(t16)
+	t18 = extract t17 #0
+	*t14 = t18
+	t19 = extract t17 #1
+	t20 = t19 == nil:error
+	t21 = t50 + 1:int
+	jump 3
+2:
+	t22 = len(t13)
+	t23 = strconv.Itoa(t22)
+	t24 = nas(t23)
+	t25 = new [1]int (slicelit)
+	t26 = &t25[0:int]
+	t27 = guru(2:int, 1:int)
+	*t26 = t27
+	t28 = slice t25[:]
+	t29 = new [2]int (slicelit)
+	t30 = &t29[0:int]
+	*t30 = 0:int
+	t31 = &t29[1:int]
+	*t31 = 2:int
+	t32 = slice t29[:]
+	t33 = new [2]int (slicelit)
+	t34 = &t33[0:int]
+	*t34 = 0:int
+	t35 = &t33[1:int]
+	*t35 = 2:int
+	t36 = slice t33[:]
+	t37 = new [1]int (slicelit)
+	t38 = &t37[0:int]
+	*t38 = 1:int
+	t39 = slice t37[:]
+	t40 = new [2]int (slicelit)
+	t41 = &t40[0:int]
+	*t41 = 0:int
+	t42 = &t40[1:int]
+	*t42 = 1:int
+	t43 = slice t40[:]
+	t44 = andre(t39, t43)
+	t45 = gza(t36, t44)
+	t46 = gza(t32, t45)
+	t47 = andre(t28, t46)
+	t48 = doom(t24, t47)
+	t49 = t48 != -2:int
+	if t49 goto 4 else 5
+3:
+	t50 = phi [0: 0:int, 1: t21] #i
+	t51 = len(t11)
+	t52 = t50 < t51
+	if t52 goto 1 else 2
+4:
+	t53 = new [1]interface{} (varargs)
+	t54 = &t53[0:int]
+	t55 = make interface{} <- string ("fail1":string)
+	*t54 = t55
+	t56 = slice t53[:]
+	t57 = fmt.Println(t56...)                            (n
+	jump 5
+5:
+	t58 = phi [2: true:bool, 4: false:bool] #g_c
+	t59 = len(t13)
+	jump 6
+6:
+	t60 = phi [5: t58, 7: t60, 9: false:bool] #g_c
+	t61 = phi [5: -1:int, 7: t62, 9: t62]
+	t62 = t61 + 1:int
+	t63 = t62 < t59
+	if t63 goto 7 else 8
+7:
+	t64 = &t13[t62]
+	t65 = *t64
+	t66 = t65 < 0:int
+	if t66 goto 9 else 6
+8:
+	t67 = len(t11)
+	t68 = t67 / 2:int
+	t69 = make []int t68 t68
+	jump 12
+9:
+	t70 = new [1]interface{} (varargs)
+	t71 = &t70[0:int]
+	t72 = make interface{} <- string ("fail2":string)
+	*t71 = t72
+	t73 = slice t70[:]
+	t74 = fmt.Println(t73...)                            (n
+	jump 6
+10:
+	t75 = &t69[t85]
+	t76 = t85 * 2:int
+	t77 = &t13[t76]
+	t78 = *t77
+	t79 = t85 * 2:int
+	t80 = t79 + 1:int
+	t81 = &t13[t80]
+	t82 = *t81
+	t83 = t78 - t82
+	*t75 = t83
+	t84 = t85 + 1:int
+	jump 12
+11:
+	jump 15
+12:
+	t85 = phi [8: 0:int, 10: t84] #i
+	t86 = len(t69)
+	t87 = t85 < t86
+	if t87 goto 10 else 11
+13:
+	t88 = t99 + 1:int
+	t89 = slice t69[:t88]
+	t90 = kendrick(t89)
+	t91 = strconv.Itoa(t90)
+	t92 = nas(t91)
+	t93 = new [1]int (slicelit)
+	t94 = &t93[0:int]
+	*t94 = 0:int
+	t95 = slice t93[:]
+	t96 = doom(t92, t95)
+	t97 = t96 == -1:int
+	if t97 goto 16 else 17
+14:
+	jump 20
+15:
+	t98 = phi [11: t60, 17: t107] #g_c
+	t99 = phi [11: 0:int, 17: t108] #i
+	t100 = len(t69)
+	t101 = t99 < t100
+	if t101 goto 13 else 14
+16:
+	t102 = new [1]interface{} (varargs)
+	t103 = &t102[0:int]
+	t104 = make interface{} <- string ("fail3":string)
+	*t103 = t104
+	t105 = slice t102[:]
+	t106 = fmt.Println(t105...)                          (n
+	jump 17
+17:
+	t107 = phi [13: t98, 16: false:bool] #g_c
+	t108 = t99 + 1:int
+	jump 15
+18:
+	t109 = &t13[t120]
+	t110 = *t109
+	t111 = t119 + t110
+	t112 = t120 + 1:int
+	t113 = &t13[t112]
+	t114 = *t113
+	t115 = t118 + t114
+	t116 = t120 + 2:int
+	jump 20
+19:
+	t117 = t119 != t118
+	if t117 goto 21 else 22
+20:
+	t118 = phi [14: 0:int, 18: t115] #o_su
+	t119 = phi [14: 0:int, 18: t111] #e_su
+	t120 = phi [14: 0:int, 18: t116] #i
+	t121 = len(t13)
+	t122 = t120 < t121
+	if t122 goto 18 else 19
+21:
+	t123 = new [1]interface{} (varargs)
+	t124 = &t123[0:int]
+	t125 = make interface{} <- string ("fail4":string)
+	*t124 = t125
+	t126 = slice t123[:]
+	t127 = fmt.Println(t126...)                          (n
+	jump 22
+22:
+	t128 = phi [19: t98, 21: false:bool] #g_c
+	t129 = len(t13)
+	jump 23
+23:
+	t130 = phi [22: -1:int, 26: t131]
+	t131 = t130 + 1:int
+	t132 = t131 < t129
+	if t132 goto 24 else 25
+24:
+	t133 = len(nil:[]int)
+	jump 26
+25:
+	t134 = &t13[49:int]
+	t135 = *t134
+	t136 = t135 != 100:int
+	if t136 goto 28 else 29
+26:
+	t137 = phi [24: -1:int, 27: t138]
+	t138 = t137 + 1:int
+	t139 = t138 < t133
+	if t139 goto 27 else 23
+27:
+	t140 = t131 + t138
+	t141 = new [1]interface{} (varargs)
+	t142 = &t141[0:int]
+	t143 = make interface{} <- int (t140)
+	*t142 = t143
+	t144 = slice t141[:]
+	t145 = fmt.Println(t144...)                          (n
+	jump 26
+28:
+	t146 = new [1]interface{} (varargs)
+	t147 = &t146[0:int]
+	t148 = make interface{} <- string ("fail5":string)
+	*t147 = t148
+	t149 = slice t146[:]
+	t150 = fmt.Println(t149...)                          (n
+	jump 29
+29:
+	t151 = phi [25: t128, 28: false:bool] #g_c
+	t152 = &t13[6:int]
+	t153 = *t152
+	t154 = &t13[7:int]
+	t155 = *t154
+	t156 = t153 - t155
+	t157 = &t13[10:int]
+	t158 = *t157
+	t159 = t156 != t158
+	if t159 goto 30 else 31
+30:
+	t160 = new [1]interface{} (varargs)
+	t161 = &t160[0:int]
+	t162 = make interface{} <- string ("fail6":string)
+	*t161 = t162
+	t163 = slice t160[:]
+	t164 = fmt.Println(t163...)                          (n
+	jump 31
+31:
+	t165 = phi [29: t151, 30: false:bool] #g_c
+	if t165 goto 32 else 34
+32:
+	t166 = new [1]interface{} (varargs)
+	t167 = &t166[0:int]
+	t168 = make interface{} <- string ("WIN":string)
+	*t167 = t168
+	t169 = slice t166[:]
+	t170 = fmt.Println(t169...)                          (n
+	jump 33
+33:
+	return
+34:
+	t171 = new [1]interface{} (varargs)
+	t172 = &t171[0:int]
+	t173 = make interface{} <- string ("No flag for you":st
+	*t172 = t173
+	t174 = slice t171[:]
+	t175 = fmt.Println(t174...)                          (n
+	jump 33
+

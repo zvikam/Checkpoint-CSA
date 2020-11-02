@@ -1,0 +1,9 @@
+func guru(a int, b int) int:
+0:
+	t0 = a > b
+	if t0 goto 1 else 2
+1:
+	return a
+2:
+	return b
+

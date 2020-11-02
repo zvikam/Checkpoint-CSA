@@ -1,0 +1,80 @@
+======================================================
+[+] main.rakim
+body:
+0:
+	t0 = doom(a, b)
+	t1 = t0 == -1:int
+	if t1 goto 1 else 2
+2:
+	t4 = len(a)
+	t5 = make []int t4 t4
+	jump 5
+5:
+	t8 = phi [2: 0:int, 11: t28] #i
+	t9 = len(a)
+	t10 = t8 < t9
+	if t10 goto 3 else 4
+3:
+	t6 = len(a)
+	t7 = t8 < t6
+	if t7 goto 6 else 7
+6:
+	t11 = &a[t8]
+	t12 = *t11
+	jump 7
+7:
+	t13 = phi [3: 0:int, 6: t12] #a_i
+	t14 = len(b)
+	t15 = t8 < t14
+	if t15 goto 8 else 9
+8:
+	t16 = &b[t8]
+	t17 = *t16
+	jump 9
+9:
+	t18 = phi [7: 0:int, 8: t17] #b_i
+	t19 = t13 < t18
+	if t19 goto 10 else 11
+11:
+	t25 = phi [9: t13, 10: t24] #a_i
+	t26 = &t5[t8]
+	t27 = t25 - t18
+	*t26 = t27
+	t28 = t8 + 1:int
+	jump 5
+5:
+	t8 = phi [2: 0:int, 11: t28] #i
+	t9 = len(a)
+	t10 = t8 < t9
+	if t10 goto 3 else 4
+3:
+	t6 = len(a)
+	t7 = t8 < t6
+	if t7 goto 6 else 7
+6:
+	t11 = &a[t8]
+	t12 = *t11
+	jump 7
+7:
+	t13 = phi [3: 0:int, 6: t12] #a_i
+	t14 = len(b)
+	t15 = t8 < t14
+	if t15 goto 8 else 9
+9:
+	t18 = phi [7: 0:int, 8: t17] #b_i
+	t19 = t13 < t18
+	if t19 goto 10 else 11
+11:
+	t25 = phi [9: t13, 10: t24] #a_i
+	t26 = &t5[t8]
+	t27 = t25 - t18
+	*t26 = t27
+	t28 = t8 + 1:int
+	jump 5
+5:
+	t8 = phi [2: 0:int, 11: t28] #i
+	t9 = len(a)
+	t10 = t8 < t9
+	if t10 goto 3 else 4
+4:
+	return t5

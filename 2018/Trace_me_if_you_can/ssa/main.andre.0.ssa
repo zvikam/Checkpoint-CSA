@@ -1,0 +1,159 @@
+======================================================
+[+] main.andre
+body:
+0:
+	t0 = len(a)
+	t1 = len(b)
+	t2 = t0 > t1
+	if t2 goto 1 else 3
+3:
+	t12 = len(a)
+	t13 = make []int t12 t12
+	jump 2
+2:
+	t5 = phi [1: t4, 3: t13] #sorry
+	t6 = dilla(a, t5)
+	t7 = len(a)
+	t8 = len(b)
+	t9 = t7 + t8
+	t10 = make []int t9 t9
+	t11 = len(t10)
+	jump 4
+4:
+	t14 = phi [2: -1:int, 5: t15]
+	t15 = t14 + 1:int
+	t16 = t15 < t11
+	if t16 goto 5 else 6
+5:
+	t17 = &t10[t15]
+	*t17 = 0:int
+	jump 4
+4:
+	t14 = phi [2: -1:int, 5: t15]
+	t15 = t14 + 1:int
+	t16 = t15 < t11
+	if t16 goto 5 else 6
+5:
+	t17 = &t10[t15]
+	*t17 = 0:int
+	jump 4
+4:
+	t14 = phi [2: -1:int, 5: t15]
+	t15 = t14 + 1:int
+	t16 = t15 < t11
+	if t16 goto 5 else 6
+5:
+	t17 = &t10[t15]
+	*t17 = 0:int
+	jump 4
+4:
+	t14 = phi [2: -1:int, 5: t15]
+	t15 = t14 + 1:int
+	t16 = t15 < t11
+	if t16 goto 5 else 6
+6:
+	jump 9
+9:
+	t22 = phi [6: 0:int, 11: t35] #i
+	t23 = len(b)
+	t24 = t22 < t23
+	if t24 goto 7 else 8
+7:
+	jump 12
+12:
+	t36 = phi [7: 0:int, 10: t34] #j
+	t37 = len(a)
+	t38 = t36 < t37
+	if t38 goto 10 else 11
+10:
+	t25 = &a[t36]
+	t26 = *t25
+	t27 = &b[t22]
+	t28 = *t27
+	t29 = t26 * t28
+	t30 = t22 + t36
+	t31 = &t10[t30]
+	t32 = *t31
+	t33 = t32 + t29
+	*t31 = t33
+	t34 = t36 + 1:int
+	jump 12
+12:
+	t36 = phi [7: 0:int, 10: t34] #j
+	t37 = len(a)
+	t38 = t36 < t37
+	if t38 goto 10 else 11
+11:
+	t35 = t22 + 1:int
+	jump 9
+9:
+	t22 = phi [6: 0:int, 11: t35] #i
+	t23 = len(b)
+	t24 = t22 < t23
+	if t24 goto 7 else 8
+7:
+	jump 12
+12:
+	t36 = phi [7: 0:int, 10: t34] #j
+	t37 = len(a)
+	t38 = t36 < t37
+	if t38 goto 10 else 11
+10:
+	t25 = &a[t36]
+	t26 = *t25
+	t27 = &b[t22]
+	t28 = *t27
+	t29 = t26 * t28
+	t30 = t22 + t36
+	t31 = &t10[t30]
+	t32 = *t31
+	t33 = t32 + t29
+	*t31 = t33
+	t34 = t36 + 1:int
+	jump 12
+12:
+	t36 = phi [7: 0:int, 10: t34] #j
+	t37 = len(a)
+	t38 = t36 < t37
+	if t38 goto 10 else 11
+11:
+	t35 = t22 + 1:int
+	jump 9
+9:
+	t22 = phi [6: 0:int, 11: t35] #i
+	t23 = len(b)
+	t24 = t22 < t23
+	if t24 goto 7 else 8
+8:
+	t18 = len(t10)
+	t19 = t18 - 1:int
+	t20 = slice t10[:t19]
+	t21 = len(t20)
+	jump 13
+13:
+	t39 = phi [8: -1:int, 14: t40, 16: t40]
+	t40 = t39 + 1:int
+	t41 = t40 < t21
+	if t41 goto 14 else 15
+14:
+	t42 = &t10[t40]
+	t43 = *t42
+	t44 = t43 >= 10:int
+	if t44 goto 16 else 13
+13:
+	t39 = phi [8: -1:int, 14: t40, 16: t40]
+	t40 = t39 + 1:int
+	t41 = t40 < t21
+	if t41 goto 14 else 15
+14:
+	t42 = &t10[t40]
+	t43 = *t42
+	t44 = t43 >= 10:int
+	if t44 goto 16 else 13
+13:
+	t39 = phi [8: -1:int, 14: t40, 16: t40]
+	t40 = t39 + 1:int
+	t41 = t40 < t21
+	if t41 goto 14 else 15
+15:
+	return t10

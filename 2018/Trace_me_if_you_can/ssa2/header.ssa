@@ -1,0 +1,13 @@
+package main.go:
+  func  andre      func(a []int, b []int) []int
+  func  dilla      func(a []int, b []int)
+  func  doom       func(aa []int, bb []int) int
+  func  guru       func(a int, b int) int
+  func  gza        func(a []int, b []int) []int
+  func  init       func()
+  var   init$guard bool
+  func  kendrick   func(a []int) int
+  func  main       func()
+  func  nas        func(a string) []int
+  func  rakim      func(a []int, b []int) []int
+

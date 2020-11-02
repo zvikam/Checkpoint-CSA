@@ -1,0 +1,187 @@
+======================================================
+[+] main.gza
+body:
+0:
+	t0 = len(a)
+	t1 = len(b)
+	t2 = guru(t0, t1)
+	t3 = t2 + 1:int
+	t4 = make []int t3 t3
+	t5 = new [1]int (slicelit)
+	t6 = &t5[0:int]
+	*t6 = 0:int
+	t7 = slice t5[:]
+	t8 = rakim(a, t7)
+	t9 = doom(a, t8)
+	t10 = t9 != -2:int
+	if t10 goto 1 else 2
+2:
+	t11 = len(t4)
+	jump 3
+3:
+	t12 = phi [2: 0:int, 11: t28] #wu
+	t13 = phi [2: -1:int, 11: t14]
+	t14 = t13 + 1:int
+	t15 = t14 < t11
+	if t15 goto 4 else 5
+4:
+	t16 = len(a)
+	t17 = t14 < t16
+	if t17 goto 6 else 7
+6:
+	t18 = &a[t14]
+	t19 = *t18
+	jump 7
+7:
+	t20 = phi [4: 0:int, 6: t19] #a_i
+	t21 = len(b)
+	t22 = t14 < t21
+	if t22 goto 8 else 9
+8:
+	t23 = &b[t14]
+	t24 = *t23
+	jump 9
+9:
+	t25 = phi [7: 0:int, 8: t24] #b_i
+	t26 = t20 + t25
+	t27 = t26 + t12
+	t28 = t27 / 10:int
+	t29 = t27 >= 10:int
+	if t29 goto 10 else 11
+11:
+	t31 = phi [9: t27, 10: t30] #tmp
+	t32 = &t4[t14]
+	*t32 = t31
+	jump 3
+3:
+	t12 = phi [2: 0:int, 11: t28] #wu
+	t13 = phi [2: -1:int, 11: t14]
+	t14 = t13 + 1:int
+	t15 = t14 < t11
+	if t15 goto 4 else 5
+4:
+	t16 = len(a)
+	t17 = t14 < t16
+	if t17 goto 6 else 7
+6:
+	t18 = &a[t14]
+	t19 = *t18
+	jump 7
+7:
+	t20 = phi [4: 0:int, 6: t19] #a_i
+	t21 = len(b)
+	t22 = t14 < t21
+	if t22 goto 8 else 9
+8:
+	t23 = &b[t14]
+	t24 = *t23
+	jump 9
+9:
+	t25 = phi [7: 0:int, 8: t24] #b_i
+	t26 = t20 + t25
+	t27 = t26 + t12
+	t28 = t27 / 10:int
+	t29 = t27 >= 10:int
+	if t29 goto 10 else 11
+11:
+	t31 = phi [9: t27, 10: t30] #tmp
+	t32 = &t4[t14]
+	*t32 = t31
+	jump 3
+3:
+	t12 = phi [2: 0:int, 11: t28] #wu
+	t13 = phi [2: -1:int, 11: t14]
+	t14 = t13 + 1:int
+	t15 = t14 < t11
+	if t15 goto 4 else 5
+4:
+	t16 = len(a)
+	t17 = t14 < t16
+	if t17 goto 6 else 7
+7:
+	t20 = phi [4: 0:int, 6: t19] #a_i
+	t21 = len(b)
+	t22 = t14 < t21
+	if t22 goto 8 else 9
+8:
+	t23 = &b[t14]
+	t24 = *t23
+	jump 9
+9:
+	t25 = phi [7: 0:int, 8: t24] #b_i
+	t26 = t20 + t25
+	t27 = t26 + t12
+	t28 = t27 / 10:int
+	t29 = t27 >= 10:int
+	if t29 goto 10 else 11
+11:
+	t31 = phi [9: t27, 10: t30] #tmp
+	t32 = &t4[t14]
+	*t32 = t31
+	jump 3
+3:
+	t12 = phi [2: 0:int, 11: t28] #wu
+	t13 = phi [2: -1:int, 11: t14]
+	t14 = t13 + 1:int
+	t15 = t14 < t11
+	if t15 goto 4 else 5
+4:
+	t16 = len(a)
+	t17 = t14 < t16
+	if t17 goto 6 else 7
+7:
+	t20 = phi [4: 0:int, 6: t19] #a_i
+	t21 = len(b)
+	t22 = t14 < t21
+	if t22 goto 8 else 9
+8:
+	t23 = &b[t14]
+	t24 = *t23
+	jump 9
+9:
+	t25 = phi [7: 0:int, 8: t24] #b_i
+	t26 = t20 + t25
+	t27 = t26 + t12
+	t28 = t27 / 10:int
+	t29 = t27 >= 10:int
+	if t29 goto 10 else 11
+11:
+	t31 = phi [9: t27, 10: t30] #tmp
+	t32 = &t4[t14]
+	*t32 = t31
+	jump 3
+3:
+	t12 = phi [2: 0:int, 11: t28] #wu
+	t13 = phi [2: -1:int, 11: t14]
+	t14 = t13 + 1:int
+	t15 = t14 < t11
+	if t15 goto 4 else 5
+4:
+	t16 = len(a)
+	t17 = t14 < t16
+	if t17 goto 6 else 7
+7:
+	t20 = phi [4: 0:int, 6: t19] #a_i
+	t21 = len(b)
+	t22 = t14 < t21
+	if t22 goto 8 else 9
+9:
+	t25 = phi [7: 0:int, 8: t24] #b_i
+	t26 = t20 + t25
+	t27 = t26 + t12
+	t28 = t27 / 10:int
+	t29 = t27 >= 10:int
+	if t29 goto 10 else 11
+11:
+	t31 = phi [9: t27, 10: t30] #tmp
+	t32 = &t4[t14]
+	*t32 = t31
+	jump 3
+3:
+	t12 = phi [2: 0:int, 11: t28] #wu
+	t13 = phi [2: -1:int, 11: t14]
+	t14 = t13 + 1:int
+	t15 = t14 < t11
+	if t15 goto 4 else 5
+5:
+	return t4

@@ -1,0 +1,57 @@
+func rakim(a []int, b []int) []int:
+0:
+	t0 = doom(a, b)
+	t1 = t0 == -1:int
+	if t1 goto 1 else 2
+1:
+	return nil:[]int
+2:
+	t2 = len(a)
+	t3 = make []int t2 t2
+	jump 5
+3:
+	t4 = len(a)
+	t5 = t6 < t4
+	if t5 goto 6 else 8
+4:
+	return t3
+5:
+	t6 = phi [2: 0:int, 13: t20] #i
+	t7 = len(a)
+	t8 = t6 < t7
+	if t8 goto 3 else 4
+6:
+	t9 = &a[t6]
+	t10 = *t9
+	jump 7
+7:
+	t11 = phi [6: t10, 8: 0:int] #a_i
+	t12 = len(b)
+	t13 = t6 < t12
+	if t13 goto 9 else 11
+8:
+	jump 7
+9:
+	t14 = &b[t6]
+	t15 = *t14
+	jump 10
+10:
+	t16 = phi [9: t15, 11: 0:int] #b_i
+	t17 = t11 < t16
+	if t17 goto 12 else 14
+11:
+	jump 10
+12:
+	t18 = &t3[t6]
+	t19 = t16 - t11
+	*t18 = t19
+	jump 13
+13:
+	t20 = t6 + 1:int
+	jump 5
+14:
+	t21 = &t3[t6]
+	t22 = t11 - t16
+	*t21 = t22
+	jump 13
+

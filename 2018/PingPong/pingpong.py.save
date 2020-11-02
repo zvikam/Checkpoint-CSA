@@ -1,0 +1,23 @@
+import sys
+import time
+from socket import create_connection
+
+SERVER = ('35.157.111.68', 10199)
+RECV_SIZE = 8192
+
+def main():
+    conn = create_connection(SERVER)
+    while True:
+        response = conn.recv(RECV_SIZE).splitlines()
+        for line in response:
+            print(line)
+            if 'Se' not in line:
+                continue
+            num = line.split()[-1]
+            print(num)
+            conn.send(num)
+            conn.send('\n')
+
+
+if __name__ == '__main__':
+    main()

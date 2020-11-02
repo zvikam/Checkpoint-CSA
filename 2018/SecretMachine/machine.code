@@ -1,0 +1,105 @@
+begin:
+    000     0x91    Push 17
+    001     0xec    Push 108
+    002     0xab    Push 43
+    003     0xc5    Push 69
+    004     0x8c    Push 12
+    005     0xc0    Push 64
+    006     0xac    Push 44
+    007     0xc3    Push 67
+    008     0x91    Push 17
+    009     0xd6    Push 86
+    010     0xb8    Push 56
+    011     0x99    Push 25
+    012     0xd5    Push 85
+    013     0x99    Push 25
+    014     0xf6    Push 118
+    015     0xa4    Push 36
+    016     0xc3    Push 67
+    017     0xad    Push 45
+    018     0x8c    Push 12
+    019     0xe0    Push 96
+    020     0x8c    Push 12
+    021     0xbc    Push 60
+    022     0xee    Push 110
+    023     0xa9    Push 41
+    024     0xc7    Push 71
+    025     0x8e    Push 14
+    026     0xe2    Push 98
+    027     0xae    Push 46
+    028     0xe1    Push 97
+    029     0xb3    Push 51
+    030     0xe1    Push 97
+    031     0xae    Push 46
+    032     0xf6    Push 118
+    033     0x8d    Push 13
+    034     0xea    Push 106
+    035     0x8b    Push 11
+    036     0xe7    Push 103
+    037     0x81    Push 1
+    038     0x8b    Push 11
+    039     0x18    JSE
+    040     0x08    Read
+    041     0x8c    Push 12
+    042     0x11    Call    // proc
+    043     0x41    Load 1
+    044     0x8a    Push 10
+    045     0x80    Push 0
+    046     0x01    Subtract
+    047     0x14    CJE
+    048     0xb0    Push 48
+    049     0x81    Push 1
+    050     0x10    Jump
+    051     0xb1    Push 49
+    052     0x09    Write
+    053     0xaf    Push 47
+    054     0x10    Jump    // end
+proc:
+    055     0x42    Load 2
+    056     0x42    Load 2
+    057     0x80    Push 0
+    058     0xa5    Push 37
+    059     0x14    CJE
+    060     0x42    Load 2
+    061     0x21    Swap 1
+    062     0x80    Push 0
+    063     0xa0    Push 32
+    064     0x14    CJE
+    065     0x80    Push 0
+    066     0x21    Swap 1
+    067     0x44    Load 4
+    068     0x9b    Push 27
+    069     0x14    CJE
+    070     0x20    Pop
+    071     0x82    Push 2
+    072     0x42    Load 2
+    073     0x02    Divide
+    074     0x82    Push 2
+    075     0x45    Load 5
+    076     0x02    Divide
+    077     0x21    Swap 1
+    078     0x22    Swap 2
+    079     0x00    Add
+    080     0x82    Push 2
+    081     0x21    Swap 1
+    082     0x02    Divide
+    083     0x21    Swap 1
+    084     0x20    Pop
+    085     0x42    Load 2
+    086     0x42    Load 2
+    087     0xa4    Push 36
+    088     0x80    Push 0
+    089     0x01    Subtract
+    090     0x11    Call
+    091     0x82    Push 2
+    092     0x03    Multiply
+    093     0x00    Add
+    094     0x22    Swap 2
+    095     0x20    Pop
+    096     0x20    Pop
+    097     0x23    Swap 3
+    098     0x20    Pop
+    099     0x21    Swap 1
+    100     0x20    Pop
+    101     0x12    Ret
+end:

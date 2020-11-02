@@ -1,0 +1,264 @@
+<html>
+<body>
+<div class="description"><link rel="stylesheet" href="styles/css_for_level.php?id=1">
+
+
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>SimpleMachine</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+
+
+<header>
+<h1 class="title">SimpleMachine</h1>
+</header>
+<h1 id="a-simple-machine">A Simple Machine</h1>
+<h2 id="what-is-this">What is this?</h2>
+<p>You stand before assembly code for a custom Virtual Machine.</p>
+<p>You will find the flag once you understand the code.</p>
+<p>Everything you need to know is described below. Don’t forget to check ou the example code!</p>
+<p>Get the machine code <a href="https://s3.eu-central-1.amazonaws.com/csh-static/simple_machine/831bd30cb6673e5a109cdda7437637ceb86f8ae2aaaa7c6b7c5d1515c8030751.zip">Here</a></p>
+<h2 id="top-level-description">Top level description</h2>
+<p>The machine is stack based, which means most operations pop data off the top of the stack and push the result. for further reference, https://en.wikipedia.org/wiki/Stack_machine#Advantages_of_stack_machine_instruction_sets</p>
+<p>The machine state is defined by an Instruction Pointer, and a Stack data structure.</p>
+<p>The next instruction to be executed is pointed to by IP, and it generally reads/write values from/to the top of the stack.</p>
+<p>Every opcode is exactly 1 byte in size. The program is read and executed sequentially starting at offset 0 in the file.</p>
+<p>Execution stops if an invalid stack address is referenced or the IP is out of code bounds.</p>
+<h1 id="instruction-set">Instruction Set</h1>
+<h3 id="important"><em><em>Important!</em></em></h3>
+<p>IP is incremented as the instruction is read (before decode/execute).</p>
+<p>This increment is not mentioned in the instruction pseudo-code. Therefore, every instruction that adds an offset to IP will result in IP = IP + offset + 1.</p>
+<p>An instruction that resets IP as IP = new_value discards the increment.</p>
+<h2 id="instruction-pseudo-code-notations">Instruction Pseudo Code Notations</h2>
+<p><code>stack.push([value])</code> - pushes the value to the stack</p>
+<p><code>stack.pop()</code> - dequeue the last value pushed to the stack .</p>
+<p><code>a = stack.pop()</code> - dequeue the last value pushed to the stack, save value to pseudo-variable ‘a’.</p>
+<p><code>stack.empty()</code> - true if there are no more values on the stack, false otherwise</p>
+<p><code>stack[N]</code> - the value of the Nth element on the stack</p>
+<p><code>IP</code> - the instruction pointer.</p>
+<h2 id="stack-instructions">Stack Instructions:</h2>
+<p><code>Push &lt;value&gt;</code></p>
+<ul>
+<li>opcode is 0x80 + value</li>
+<li>Pushes the value to the stack, stack[0] is now <value>, stack[1] is now the previous stack[0] value, and so on.</value></li>
+<li>value &lt;= 0x7f</li>
+<li>Push 0x32 is encoded as 0xB2.</li>
+</ul>
+<pre><code>stack.push(value)</code></pre>
+<hr>
+<p><code>Load &lt;offset&gt;</code></p>
+<ul>
+<li>opcode is 0x40 + offset</li>
+<li>Pushes the value at stack[offset] to the stack.</li>
+<li>value &lt;= 0x3f</li>
+<li>Load 0x12 is encoded as 0x52.</li>
+<li>Loading from an offset out of bounds (i.e pushing 10 values and loading from offset 12) will cause a fault and execution will terminate.</li>
+</ul>
+<pre><code>stack.push(stack[offset])</code></pre>
+<hr>
+<p><code>Pop</code></p>
+<ul>
+<li>opcode 0x20</li>
+<li>Same encoding as Swap 0</li>
+<li>Swap 0 is an empty statement, thus this opcode pops a value from the stack without doing anything with it.</li>
+</ul>
+<pre><code>stack.pop()</code></pre>
+<hr>
+<p><code>Swap &lt;index&gt;</code></p>
+<ul>
+<li>opcode is 0x20 + index</li>
+<li>Swaps the element at HEAD with the element at index.</li>
+<li>1 &lt;= index &lt; 0x20.</li>
+<li>Swap 3 is encoded as 0x23.</li>
+</ul>
+<pre><code>temp = stack[index]
+stack[index] = stack.pop()
+stack.push(temp)</code></pre>
+<hr>
+<h2 id="arithmetic-instructions">Arithmetic instructions</h2>
+<p>These instructions read 2 values off the stack and push the result. ### Single outupt instructions:</p>
+<p><code>Add</code></p>
+<ul>
+<li>opcode is 0x00.</li>
+<li>operands are viewed as signed bytes</li>
+</ul>
+<pre><code>stack.push(stack.pop() + stack.pop())</code></pre>
+<hr>
+<p><code>Subtract</code></p>
+<ul>
+<li>opcode is 0x01.</li>
+<li>operands are viewed as signed bytes</li>
+</ul>
+<pre><code>stack.push(stack.pop() - stack.pop())</code></pre>
+<hr>
+<p><code>Multiply</code></p>
+<ul>
+<li>opcode is 0x03.</li>
+<li>operands are viewed as signed bytes</li>
+</ul>
+<pre><code>stack.push(stack.pop() * stack.pop())</code></pre>
+<hr>
+<h3 id="byte-output">2-byte output</h3>
+<p><code>Divide</code></p>
+<ul>
+<li>opcode is 0x02.</li>
+<li>division reminder is at HEAD, division result follows</li>
+<li>operands are viewed as unsigned bytes</li>
+</ul>
+<pre><code>a = stack.pop()
+b = stack.pop()
+stack.push(a / b)
+stack.push(a % b)</code></pre>
+<hr>
+<h2 id="flow-control-instructions">Flow Control Instructions:</h2>
+<p>These instructions change the Instruction Pointer and allow for loops, function calls, etc.</p>
+<p><code>Jump</code></p>
+<ul>
+<li>opcode is 0x10. Jumps to offset stack[0].</li>
+<li>offset is signed! Jumping to a negative offset is a jump backwards.</li>
+<li>Pops an offset from the stack, adds it to IP.</li>
+</ul>
+<pre><code>IP = IP + stack.pop()</code></pre>
+<hr>
+<p><code>Call</code></p>
+<ul>
+<li>opcode is 0x11. Jumps to stack[0], saves origin.</li>
+<li>same as Jump, only IP before execution is pushed.</li>
+<li>offset is signed! Calling to a negative offset is a jump backwards.</li>
+</ul>
+<pre><code>offset = stack.pop()
+stack.push(IP) ; note that IP was already incremented here, points to next instruction.
+IP = IP + offset</code></pre>
+<hr>
+<p><code>Ret</code></p>
+<ul>
+<li>opcode is 0x12. Pops value from the stack, moves IP to the popped value.</li>
+</ul>
+<pre><code>IP = stack.pop()</code></pre>
+<hr>
+<p><code>CJE</code></p>
+<ul>
+<li>opcode is 0x14. Jumps to stack[0] if stack[1] == stack[2]. pops all values either way.</li>
+<li>offset is signed! Jumping to a negative offset is a jump backwards.</li>
+</ul>
+<pre><code>offset = stack.pop()
+if stack.pop() == stack.pop():
+    IP = IP + offset</code></pre>
+<hr>
+<p><code>JSE</code></p>
+<ul>
+<li>opcode is 0x18. Adds stack[0] to IP if it is the last value on the stack.</li>
+</ul>
+<pre><code>offset = stack.pop()
+if stack.empty():
+    IP = IP + offset</code></pre>
+<hr>
+<h2 id="input-output-instructions">Input Output Instructions:</h2>
+<p>These instructions either output an ASCII byte or read an ASCII byte from the input/output device.</p>
+<p><code>Read</code></p>
+<ul>
+<li>opcode is 0x08</li>
+<li>Waits for a single byte to be read from the input, pushes the byte to the top of the stack.</li>
+</ul>
+<pre><code>stack.push(read(stdin))</code></pre>
+<hr>
+<p><code>Write</code></p>
+<ul>
+<li>opcode is 0x09</li>
+<li>outputs the top of the stack as ASCII.</li>
+</ul>
+<pre><code>write(stdout, stack.pop())</code></pre>
+<hr>
+<h1 id="lets-run-togeather">LeT’s rUN TogEaTHeR</h1>
+<p>Here you’ll find an execution log of a simple program.</p>
+<p>Note that the ‘;’ symbol starts a comment line</p>
+<p>lines of the form “; &gt;| value1 value2 value3” show the stack state before the following instruction. The stack head is to the left (the first value after &gt;| is SP[0])</p>
+<p>The stack state inside the called function is a direct continuation of the caller execution</p>
+<p>Note that “Word:” defines a label, which basically names a line of code.</p>
+<pre><code>;&gt;|
+    Push 2
+;&gt;| 02
+    Push 7F
+;&gt;| 7F 02
+    Read            ; assuming user inputs 0x3
+;&gt;| 03 7F 02
+    Push 0A         ; OFFSET of Adder
+;&gt;| 0A 03 7F 02
+    Call
+;&gt;| 82 02
+    Divide
+;&gt;| 00 41
+    Swap 1
+;&gt;| 41 00
+    Write
+;&gt;| 00
+    Pop
+;&gt;|
+    Push 0C         ; OFFSET of More
+;&gt;| 0C
+    JSE
+;&gt;| 
+
+NotReached:
+    Push 4
+    Push 0
+    Sub     ; constructs offset of NotReached, which is -4 (0xFC)
+    Call
+
+Adder:
+;&gt;| 05 03 7F 02
+    Load 2
+;&gt;| 7F 05 03 7F 02
+    Load 2
+;&gt;| 03 7F 05 03 7F 02
+    Add
+;&gt;| 82 05 03 7F 02
+    Swap 3
+;&gt;| 7F 05 03 82 02
+    Pop
+;&gt;| 05 03 82 02
+    Swap 1
+;&gt;| 03 05 82 02
+    Pop
+;&gt;| 05 82 02
+    Ret
+;&gt;| 82 02
+
+
+More:
+; fill the rest on your own!
+;&gt;| 
+    Push 44
+;&gt;| 
+    Push 4E
+;&gt;| 
+    Push 45
+;&gt;| 
+    Push 20
+;&gt;| 
+    Write
+;&gt;| 
+    Write
+;&gt;|    
+    Write
+;&gt;|     
+    Write
+
+; Program ends here</code></pre>
+<p>On the displayed run, The program printed “A END”</p>
+<p>Your job is to decipher the code and give us the flag.</p>
+<p>Good Luck!</p>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+======================================================
+[+] main.nas
+body:
+0:
+	t0 = len(a)
+	t1 = t0 / 2:int
+	t2 = len(a)
+	t3 = t2 / 2:int
+	t4 = t1 + t3
+	t5 = make []int 0:int t4
+	t6 = len(a)
+	t7 = t6 - 1:int
+	jump 3
+3:
+	t12 = phi [0: 0:int, 8: t27] #z
+	t13 = phi [0: t5, 8: t23] #msg
+	t14 = phi [0: t7, 8: t28] #i
+	t15 = t14 >= 0:int
+	if t15 goto 1 else 2
+1:
+	t8 = a[t14]
+	t9 = t8 - 48:byte
+	t10 = convert int <- byte (t9)
+	t11 = t10 >= 0:int
+	if t11 goto 6 else 5
+6:
+	t25 = t10 < 10:int
+	if t25 goto 4 else 5
+4:
+	t16 = t12 + t10
+	t17 = guru(t10, 0:int)
+	t18 = new [1]int (varargs)
+	t19 = &t18[0:int]
+	*t19 = t17
+	t20 = slice t18[:]
+	t21 = append(t13, t20...)
+	jump 5
+5:
+	t22 = phi [1: t12, 6: t12, 4: t16] #z
+	t23 = phi [1: t13, 6: t13, 4: t21] #msg
+	t24 = t22 == 1024:int
+	if t24 goto 7 else 8
+8:
+	t27 = phi [5: t22, 7: t26] #z
+	t28 = t14 - 1:int
+	jump 3
+3:
+	t12 = phi [0: 0:int, 8: t27] #z
+	t13 = phi [0: t5, 8: t23] #msg
+	t14 = phi [0: t7, 8: t28] #i
+	t15 = t14 >= 0:int
+	if t15 goto 1 else 2
+2:
+	return t13

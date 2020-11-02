@@ -1,0 +1,4175 @@
+======================================================
+[+] main.main
+body:
+0:
+	*g_c = true:bool
+	t0 = *os.Stdin
+	t1 = make io.Reader <- *os.File (t0)
+	t2 = bufio.NewReader(t1)
+	t3 = new [1]interface{} (varargs)
+	t4 = &t3[0:int]
+	t5 = make interface{} <- string ("Please insert input:":string)
+	*t4 = t5
+	t6 = slice t3[:]
+	t7 = fmt.Println(t6...)
+	t8 = (*bufio.Reader).ReadString(t2, 10:byte)
+	t9 = extract t8 #0
+	t10 = extract t8 #1
+	t11 = strings.Fields(t9)
+	t12 = len(t11)
+	t13 = make []int t12 t12
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+1:
+	t14 = &t11[t48]
+	t15 = *t14
+	t16 = strconv.Atoi(t15)
+	t17 = extract t16 #0
+	t18 = extract t16 #1
+	t19 = t18 != nil:error
+	if t19 goto 4 else 5
+5:
+	t51 = &t13[t48]
+	*t51 = t17
+	t52 = t48 + 1:int
+	jump 3
+3:
+	t48 = phi [0: 0:int, 5: t52] #i
+	t49 = len(t11)
+	t50 = t48 < t49
+	if t50 goto 1 else 2
+2:
+	t20 = new [1]int (slicelit)
+	t21 = &t20[0:int]
+	*t21 = 1:int
+	t22 = slice t20[:]
+	t23 = new [2]int (slicelit)
+	t24 = &t23[0:int]
+	*t24 = 0:int
+	t25 = &t23[1:int]
+	*t25 = 1:int
+	t26 = slice t23[:]
+	t27 = andre(t22, t26)
+	t28 = new [2]int (slicelit)
+	t29 = &t28[0:int]
+	*t29 = 0:int
+	t30 = &t28[1:int]
+	*t30 = 2:int
+	t31 = slice t28[:]
+	t32 = gza(t31, t27)
+	t33 = new [2]int (slicelit)
+	t34 = &t33[0:int]
+	*t34 = 0:int
+	t35 = &t33[1:int]
+	*t35 = 2:int
+	t36 = slice t33[:]
+	t37 = gza(t36, t32)
+	t38 = guru(2:int, 1:int)
+	t39 = new [1]int (slicelit)
+	t40 = &t39[0:int]
+	*t40 = t38
+	t41 = slice t39[:]
+	t42 = andre(t41, t37)
+	t43 = len(t13)
+	t44 = strconv.Itoa(t43)
+	t45 = nas(t44)
+	t46 = doom(t45, t42)
+	t47 = t46 != -2:int
+	if t47 goto 6 else 7
+6:
+	*g_c = false:bool
+	jump 7
+7:
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+8:
+	t53 = &t13[t59]
+	t54 = *t53
+	t55 = t54 <= 0:int
+	if t55 goto 11 else 12
+12:
+	t62 = t59 + 1:int
+	jump 10
+10:
+	t59 = phi [7: 0:int, 12: t62] #i
+	t60 = len(t13)
+	t61 = t59 < t60
+	if t61 goto 8 else 9
+9:
+	t56 = len(t13)
+	t57 = t56 / 2:int
+	t58 = make []int t57 t57
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+13:
+	t63 = &t58[t73]
+	t64 = t73 * 2:int
+	t65 = &t13[t64]
+	t66 = *t65
+	t67 = t73 * 2:int
+	t68 = t67 + 1:int
+	t69 = &t13[t68]
+	t70 = *t69
+	t71 = t66 - t70
+	*t63 = t71
+	t72 = t73 + 1:int
+	jump 15
+15:
+	t73 = phi [9: 0:int, 13: t72] #i
+	t74 = len(t58)
+	t75 = t73 < t74
+	if t75 goto 13 else 14
+14:
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+16:
+	t76 = t86 + 1:int
+	t77 = slice t58[:t76]
+	t78 = kendrick(t77)
+	t79 = strconv.Itoa(t78)
+	t80 = nas(t79)
+	t81 = new [1]int (slicelit)
+	t82 = &t81[0:int]
+	*t82 = 0:int
+	t83 = slice t81[:]
+	t84 = doom(t80, t83)
+	t85 = t84 == -1:int
+	if t85 goto 19 else 20
+20:
+	t89 = t86 + 1:int
+	jump 18
+18:
+	t86 = phi [14: 0:int, 20: t89] #i
+	t87 = len(t58)
+	t88 = t86 < t87
+	if t88 goto 16 else 17
+17:
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+21:
+	t90 = &t13[t101]
+	t91 = *t90
+	t92 = t100 + t91
+	t93 = t101 + 1:int
+	t94 = &t13[t93]
+	t95 = *t94
+	t96 = t99 + t95
+	t97 = t101 + 2:int
+	jump 23
+23:
+	t99 = phi [17: 0:int, 21: t96] #o_su
+	t100 = phi [17: 0:int, 21: t92] #e_su
+	t101 = phi [17: 0:int, 21: t97] #i
+	t102 = len(t13)
+	t103 = t102 - 1:int
+	t104 = t101 < t103
+	if t104 goto 21 else 22
+22:
+	t98 = t99 != t100
+	if t98 goto 24 else 25
+24:
+	*g_c = false:bool
+	jump 25
+25:
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+26:
+	jump 31
+31:
+	t118 = phi [26: t108, 33: t127] #u_arr
+	t119 = phi [26: 0:int, 33: t128] #x
+	t120 = len(t118)
+	t121 = t119 < t120
+	if t121 goto 29 else 30
+30:
+	t117 = t109 + 1:int
+	jump 28
+28:
+	t108 = phi [25: nil:[]int, 30: t118] #u_arr
+	t109 = phi [25: 0:int, 30: t117] #i
+	t110 = len(t13)
+	t111 = t109 < t110
+	if t111 goto 26 else 27
+27:
+	t105 = &t13[49:int]
+	t106 = *t105
+	t107 = t106 != 100:int
+	if t107 goto 34 else 35
+34:
+	*g_c = false:bool
+	jump 35
+35:
+	t129 = &t13[6:int]
+	t130 = *t129
+	t131 = &t13[7:int]
+	t132 = *t131
+	t133 = t130 - t132
+	t134 = &t13[10:int]
+	t135 = *t134
+	t136 = t133 != t135
+	if t136 goto 36 else 37
+36:
+	*g_c = false:bool
+	jump 37
+37:
+	t137 = *g_c
+	if t137 goto 38 else 40
+40:
+	t143 = new [1]interface{} (varargs)
+	t144 = &t143[0:int]
+	t145 = make interface{} <- string ("No flag for you":string)
+	*t144 = t145
+	t146 = slice t143[:]
+	t147 = fmt.Println(t146...)
+	jump 39
+39:
+	return
