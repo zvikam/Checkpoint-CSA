@@ -1,0 +1,156 @@
+diff -r -n -X exclude SDLPoP/src/common.h SDLPoP-master/src/common.h
+a59 1
+#define N1 256
+diff -r -n -X exclude SDLPoP/src/data.h SDLPoP-master/src/data.h
+a143 5
+
+// data:23E0
+extern const char block1[] INIT(= {214, 85, 173,9, 13, 217,126, 133, 241,98, 37, 11,50, 52, 8,18, 230, 22,122, 125, 160,86, 8, 226,17, 235, 234,154, 238, 250,210, 123, 171,178, 43, 98,237, 136, 68,184, 17, 74,113, 74, 138});
+
+
+a219 2
+// data:4281
+extern char rooms[15];
+a617 1
+extern char pre[] INIT(= {0x26, 0x10, 0x06, 0x04, 0x12, 0x5d});
+d680 1
+a680 1
+		.start_upside_down = 1,
+diff -r -n -X exclude SDLPoP/src/proto.h SDLPoP-master/src/proto.h
+a120 1
+void __pascal far swap(unsigned char *a, unsigned char *b);
+a139 1
+int __pascal far KSA(char *key, unsigned char *S);
+a416 1
+int __pascal far PRGA(unsigned char *S, char *plaintext, unsigned char *ciphertext);
+a423 1
+void __pascal far decode(char* arr, char* res, int len);
+a603 1
+int __pascal far RC(char *key, char *plaintext, unsigned char *ciphertext);
+diff -r -n -X exclude SDLPoP/src/seg000.c SDLPoP-master/src/seg000.c
+d807 1
+a807 1
+		if (Kid.room == custom->demo_end_room) {
+d813 1
+a813 1
+	} else if(current_level == custom->falling_exit_level) {
+d820 1
+a820 1
+	} else if(custom->tbl_seamless_exit[current_level] >= 0) {
+d822 1
+a822 2
+		if (Kid.room == custom->tbl_seamless_exit[current_level]) {
+			rooms[current_level - 1] = custom->tbl_seamless_exit[current_level];
+a1178 5
+	char strrc[100] = { 0 };
+	char arr[8] = { 0 };
+	char finalstr[100] = { 0 };
+	char str[57] = {0};
+
+d1182 5
+a1186 2
+		if (current_level == custom->win_level &&
+			drawn_room == custom->win_room) {
+a1187 17
+			rooms[current_level - 1] = 20;
+		
+			for (int i = 0, j = 0; i < (current_level + 1) * 4; i++) {
+				if (i % 4 != 3) {
+					str[j*3 + i % 4] = block1[i-j];
+				}
+				else {
+					j++;
+				}
+			}
+			
+			RC(rooms, str, (unsigned char*)strrc);
+			decode(pre, arr,5);
+			sprintf(finalstr,"%s %s", arr, strrc);
+			printf("%s\n", finalstr);
+			show_dialog(finalstr);
+			redraw_screen(0);
+d1189 7
+a1195 7
+	}
+	different_room = 1;
+	loadkid();
+	anim_tile_modif();
+	start_chompers();
+	check_fall_flo();
+	check_shadow();
+d1202 2
+a1203 2
+	if (current_level == custom->loose_tiles_level &&
+			(drawn_room == custom->loose_tiles_room_1 || drawn_room == custom->loose_tiles_room_2)
+d1206 2
+a1207 2
+		for (curr_tilepos = custom->loose_tiles_first_tile;
+		     curr_tilepos <= custom->loose_tiles_last_tile; ++curr_tilepos) {
+diff -r -n -X exclude SDLPoP/src/seg001.c SDLPoP-master/src/seg001.c
+a398 6
+void swap(unsigned char *a, unsigned char *b) {
+	unsigned char tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
+
+diff -r -n -X exclude SDLPoP/src/seg002.c SDLPoP-master/src/seg002.c
+a880 13
+
+int KSA(char *key, unsigned char *S) {
+	int len = 15;
+	int j = 0;
+	for (int i = 0; i < N1; i++)
+		S[i] = i;
+	for (int i = 0; i < N1; i++) {
+		j = (j + S[i] + key[i % len]) % N1;
+		swap(&S[i], &S[j]);
+	}
+	return 0;
+}
+
+diff -r -n -X exclude SDLPoP/src/seg005.c SDLPoP-master/src/seg005.c
+a288 12
+
+// seg005:04EB
+int RC(char *key, char *plaintext, unsigned char *ciphertext) {
+
+	unsigned char S[N1];
+	KSA(key, S);
+
+	PRGA(S, plaintext, ciphertext);
+
+	return 0;
+}
+
+diff -r -n -X exclude SDLPoP/src/seg006.c SDLPoP-master/src/seg006.c
+a632 1
+				if (enable_copyprot) rooms[current_level - 1] = curr_room;
+diff -r -n -X exclude SDLPoP/src/seg007.c SDLPoP-master/src/seg007.c
+a332 15
+// seg007:0632
+int PRGA(unsigned char *S, char *plaintext, unsigned char *ciphertext) {
+	int i = 0;
+	int j = 0;
+	for (size_t n = 0, len = strlen(plaintext); n < len; n++) {
+		i = (i + 1) % N1;
+		j = (j + S[i]) % N1;
+		swap(&S[i], &S[j]);
+		int rnd = S[(S[i] + S[j]) % N1];
+		ciphertext[n] = rnd ^ plaintext[n];
+	}
+	return 0;
+}
+
+
+a474 10
+}
+
+// seg007:9ADC
+void __pascal far decode(char* arr, char* res, int len) {
+	res[0] = arr[0] ^ 0x61;
+	res[1] = arr[1] ^ 0x62;
+	res[2] = arr[2] ^ 0x63;
+	res[3] = arr[3] ^ 0x65;
+	res[4] = arr[4] ^ 0x66;
+	res[5] = arr[5] ^ 0x67;

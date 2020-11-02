@@ -1,0 +1,37 @@
+Oh my, I'm locked outside my car! I mean, my car is right here but... I've lost my key!
+
+My car doesn't require a physical key, though. It's a digital one. Luckily, I've once written it in an odd way... 
+Please help me find it! I'm running late for dinner O_o
+
+In the attached file "real_key.rar" you'll find a lot of power point files. My key hides in there, as I'll explain below.
+
+Luckliy, I've also created a "small_key.rar", so we can easily play around with it. Extract this one first.
+
+The first relevant powerpoint file is called "START.pptx". Open it.
+
+As you'll see, it contains some slides. Every slide has text in the following format:
+<CHARACTER>, <NEXT_PRESENTATION_NAME>, <SLIDE_NUMBER>
+
+Each relevant presentation holds a single character from my key, in a single slide. Not all presentations are relevant, though.
+For "START.pptx", this is guaranteed to be the first slide. As you can see, it displays the following text:
+
+`L, E26DWA33X6.pptx, 10`
+
+You can ignore the rest of the slides - as only one slide is relevant in every (relevant) presentation.
+This means that the first character for my key is `L`. The next relevant character can be found in slide 10 of presentation E26DWA33X6.pptx.
+
+Let's go there:
+`5, PRZ12DA3D8.pptx, 1`
+
+So our next character is `5`. The next relevant character is in the first slide of PRZ12DA3D8.pptx, let's go there:
+`M, A6LLDC9D18.pptx, 12`
+
+So our  character is `M`. The next one will be in slide 12 of A6LLDC9D18.pptx. Let's go there...
+Wait, it doesn't exist! This means we're done with the key, and it is:
+`L5M`.
+
+Note that all the other presentations file were irrelevant for solving this.
+
+I could have done this without you, of course, but my real key is much longer. It's written in the presentations in "real_key.rar" in the same mechanism, though. So you know what you need to do.
+
+My mom just called, dinner is getting cold. Please help me!

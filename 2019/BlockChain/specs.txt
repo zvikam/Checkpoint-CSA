@@ -1,0 +1,46 @@
+The CSA blockchain is made out of blocks constructed as following:
+
+Each TX root is calculated by a balanced Merkle tree.
+The hash function used by the Merkle tree is md5. 
+In each Merkle tree every non-leaf sons amount is fixed, but may change over different trees.
+
+The first block hash is calculated by md5 of concatenation initialization vector with the first block TX root. The rest of the blocks hash is calculated by md5 of concatenation previous block hash with the current TX root.
+
+In the attach zip are 16 blocks, your mission is to calculate the hash of the last block, given the IV a861f335d4d457a7c1d00640da380dc4
+
+  -------------------                 -------------------                 ------------------- 
+ |                   |               |                   |               |                   |
+ |        IV         |        ---->  |  Prev Block Hash  |        ---->  |  Prev Block Hash  |
+ |                   |       |       |                   |       |       |                   |
+  -------------------   -----         -------------------   -----         ------------------- 
+ |         |    |    |               |         |    |    |               |         |    |    |
+ | TX root | Hi | S  |               | TX root | Hi | S  |               | TX root | Hi | S  |
+ |         |    |    |               |         |    |    |               |         |    |    |
+  -------------------                 -------------------                 ------------------- 
+
+
+Example balanced Merkle trees:
+
+        Height = 3              Height = 2
+        Sons = 2                Sons = 3 
+  
+        TX root                  TX root
+         / \                      /|\
+        /   \                    / | \
+       /     \                  /  |  \
+     O        O                /   |   \
+    / \      / \              O    |    O
+   /   \    /   \            /|\   |   /|\
+  O     O  O     O          / | \  |  / | \
+ /|    /|  |\    |\        O  O  O | O  O  O
+O O   O O  O O   O O       |  |  | | |  |  |
+| |   | |  | |   | |       0  1  2 | 6  7  8
+0 1   2 3  4 5   6 7               |
+                                   O
+                                  /|\
+                                 / | \
+                                O  O  O
+                                |  |  |
+                                3  4  5
+
+

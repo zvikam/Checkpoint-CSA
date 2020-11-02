@@ -1,0 +1,8 @@
+*.bat
+*.rc
+*.txt
+*Makefile
+*.dev
+*.sh
+*.template
+.git

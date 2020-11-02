@@ -1,3 +1,12 @@
 [submodule "2018/Trace_me_if_you_can/ssaview"]
 	path = 2018/Trace_me_if_you_can/ssaview
 	url = https://github.com/tmc/ssaview.git
+[submodule "2019/PrinceOfPersia/SDLPoP"]
+	path = 2019/PrinceOfPersia/SDLPoP
+	url = https://github.com/NagyD/SDLPoP
+[submodule "2019/MBA/crypto_utils"]
+	path = 2019/MBA/crypto_utils
+	url = https://github.com/hasherezade/crypto_utils
+[submodule "2019/PrettyDamnFunny/pdfresurrect"]
+	path = 2019/PrettyDamnFunny/pdfresurrect
+	url = https://github.com/enferex/pdfresurrect.git
