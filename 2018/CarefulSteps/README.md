@@ -6,6 +6,6 @@ where
 - N is a number
 
 ## solver
-we start with archive 0, 
-advance forward (or backward) N steps to the next archive in line,
-appending its letter to the result.
+we start with archive 0,  
+advance forward (or backward) N steps to the next archive in line,  
+appending its letter to the result.  
