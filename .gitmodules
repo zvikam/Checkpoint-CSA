@@ -10,3 +10,6 @@
 [submodule "2019/PrettyDamnFunny/pdfresurrect"]
 	path = 2019/PrettyDamnFunny/pdfresurrect
 	url = https://github.com/enferex/pdfresurrect.git
+[submodule "2020/stateful-keen/vanilla-keendreams"]
+	path = 2020/stateful-keen/vanilla-keendreams
+	url = https://github.com/dos-games/vanilla-keendreams.git

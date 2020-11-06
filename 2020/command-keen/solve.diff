@@ -1,0 +1,90 @@
+diff -ru Source/id_ca.c DOS/PROG/KEEN/id_ca.c
+--- Source/id_ca.c	2020-11-06 11:49:12.000000000 +0200
++++ DOS/PROG/KEEN/id_ca.c	2020-08-30 22:58:35.000000000 +0300
+@@ -1674,6 +1674,7 @@
+ 
+ 		US_CPrint ("Loading");
+ 		fontcolor = F_SECONDCOLOR;
++		printf("%s\n", title);
+ 		US_CPrint (title);
+ 		fontcolor = F_BLACK;
+ 		VW_UpdateScreen();
+diff -ru Source/id_in.c DOS/PROG/KEEN/id_in.c
+--- Source/id_in.c	2020-11-06 11:49:12.000000000 +0200
++++ DOS/PROG/KEEN/id_in.c	2020-08-30 23:58:03.000000000 +0300
+@@ -763,15 +763,17 @@
+ 	if (DemoMode == demo_Playback)
+ 	{
+ 		dbyte = DemoBuffer[DemoOffset + 1];
+-		dy = (dbyte & 3) - 1;
+-		dx = ((dbyte >> 2) & 3) - 1;
++		my = (dbyte & 3) - 1;
++		mx = ((dbyte >> 2) & 3) - 1;
+ 		buttons = (dbyte >> 4) & 3;
+ 
++		realdelta = false;
++
+ 		if (!DemoBuffer[DemoOffset]--)
+ 		{
+ 			DemoOffset += 2;
+ 			if (DemoOffset >= DemoSize)
+-				DemoMode = demo_PlayDone;
++				DemoMode = demo_Off;
+ 		}
+ 	}
+ 	else if (DemoMode == demo_PlayDone)
+@@ -832,6 +834,7 @@
+ 	{
+ 		dx = mx * 127;
+ 		dy = my * 127;
++		//printf("== %d %d %d %d\n", mx, dx, my, dy);
+ 	}
+ 
+ 	info->x = dx;
+@@ -913,6 +916,7 @@
+ 	DemoMode = demo_Playback;
+ 	DemoSize = bufsize & ~1;
+ 	DemoOffset = 0;
++	//printf("%p %d\n", DemoBuffer, DemoSize);
+ }
+ 
+ ///////////////////////////////////////////////////////////////////////////
+diff -ru Source/kd_demo.c DOS/PROG/KEEN/kd_demo.c
+--- Source/kd_demo.c	2020-11-06 11:49:12.000000000 +0200
++++ DOS/PROG/KEEN/kd_demo.c	2020-08-30 23:18:00.000000000 +0300
+@@ -72,9 +72,11 @@
+ 	gamestate.score = 0;
+ 	gamestate.nextextra = 20000;
+ 	gamestate.lives = 3;
+-	gamestate.flowerpowers = gamestate.boobusbombs = 0;
++	gamestate.boobusbombs=99;
++	gamestate.flowerpowers=99;
++	gamestate.keys=99;
+ 	for (i = 0;i < GAMELEVELS;i++)
+-		gamestate.leveldone[i] = false;
++		gamestate.leveldone[i] = true;
+ }
+ 
+ //===========================================================================
+Only in Source: kd_main.c
+diff -ru Source/kd_play.c DOS/PROG/KEEN/kd_play.c
+--- Source/kd_play.c	2020-11-06 11:49:12.000000000 +0200
++++ DOS/PROG/KEEN/kd_play.c	2020-08-30 19:03:35.000000000 +0300
+@@ -645,7 +645,7 @@
+ 		// finished a city here?
+ 		if (info>=3 && info<=18 && gamestate.leveldone[info-2])
+ 		{
+-			*(mapsegs[2] + spot) = 0;
++			//*(mapsegs[2] + spot) = 0;
+ 			foreground = *(mapsegs[1] + spot);
+ 			if (foreground == 130)
+ 				*(mapsegs[1]+spot) = 0;	// not blocking now
+@@ -808,7 +808,7 @@
+ //
+ 	if (!plummet && player->bottom > originymax+13*TILEGLOBAL)
+ 	{
+-		godmode = 0;
++		godmode = 1;
+ 		plummet = 1;
+ 		KillKeen ();
+ 		return;
