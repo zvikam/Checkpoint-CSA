@@ -21,6 +21,7 @@
    - [pinball](https://github.com/zvikam/Checkpoint-CSA/tree/main/2019/pinball)
 - 2020
    - [amaze me](https://github.com/zvikam/Checkpoint-CSA/tree/main/2020/amaze%20me)
+   - [automatic_machine](https://github.com/zvikam/Checkpoint-CSA/tree/main/2020/automatic_machine)
    - [Can_You_See_It](https://github.com/zvikam/Checkpoint-CSA/tree/main/2020/Can_You_See_It)
    - [command-keen](https://github.com/zvikam/Checkpoint-CSA/tree/main/2020/command-keen)
    - [stateful-keen](https://github.com/zvikam/Checkpoint-CSA/tree/main/2020/stateful-keen)
