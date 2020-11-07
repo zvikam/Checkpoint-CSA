@@ -1,1 +1,27 @@
-
+## Solutions to Checkpoint CSA challenges
+- 2018
+   - [0120343536](../../tree/main/2018/0120343536)
+   - [BowsersSecretMessage](../../tree/main/2018/BowsersSecretMessage)
+   - [CarefulSteps](../../tree/main/2018/CarefulSteps)
+   - [PingPong](../../tree/main/2018/PingPong)
+   - [Protocol](../../tree/main/2018/Protocol)
+   - [Puzzle](../../tree/main/2018/Puzzle)
+   - [SecretMachine](../../tree/main/2018/SecretMachine)
+   - [Trace_me_if_you_can](../../tree/main/2018/Trace_me_if_you_can)
+   - [png++](../../tree/main/2018/png++)
+- 2019
+   - [BadaBase](../../tree/main/2019/BadaBase)
+   - [BlockChain](../../tree/main/2019/BlockChain)
+   - [DaVinci](../../tree/main/2019/DaVinci)
+   - [LostInsideMyPPTX](../../tree/main/2019/LostInsideMyPPTX)
+   - [MBA](../../tree/main/2019/MBA)
+   - [PrettyDamnFunny](../../tree/main/2019/PrettyDamnFunny)
+   - [PrinceOfPersia](../../tree/main/2019/PrinceOfPersia)
+   - [SlotMachine](../../tree/main/2019/SlotMachine)
+   - [pinball](../../tree/main/2019/pinball)
+- 2020
+   - [amaze me](../../tree/main/2020/amaze%20me)
+   - [command-keen](../../tree/main/2020/command-keen)
+   - [stateful-keen](../../tree/main/2020/stateful-keen)
+   - [tricky_guess](../../tree/main/2020/tricky_guess)
+   - [xor-with-xor](../../tree/main/2020/xor-with-xor)
