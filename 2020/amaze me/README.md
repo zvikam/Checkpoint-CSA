@@ -5,7 +5,8 @@ try different commands, find
 - u = up
 - d = down
 - r = right
-- l = left
+- l = left  
+
 try to write a recursive decent client to exit the maze, which fails after a few minutes.  
 print the maze and discover it has no exit, but appears to contain unreachable islands.  
   
