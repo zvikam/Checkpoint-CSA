@@ -1,0 +1,28 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Tue Sep  1 22:39:43 2020
+Invocation: foremost Fix_me.fixed.doc 
+Output directory: /Users/zvikameiseles/Projects/CheckPoint2020/Fix_me/output
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: Fix_me.fixed.doc
+Start: Tue Sep  1 22:39:43 2020
+Length: Unknown
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.ole 	      87 KB 	          0 	 
+1:	00000125.zip 	      18 KB 	      64242 	 
+2:	00000067.png 	      19 KB 	      34401 	  (105 x 160)
+3:	00000106.png 	      156 B 	      54519 	  (15 x 15)
+Finish: Tue Sep  1 22:39:43 2020
+
+4 FILES EXTRACTED
+	
+ole:= 1
+zip:= 1
+png:= 2
+------------------------------------------------------------------
+
+Foremost finished at Tue Sep  1 22:39:43 2020
