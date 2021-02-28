@@ -1,5 +1,5 @@
 ## problem
-given an online work-guessing game and a list of words.
+given an online word-guessing game and a list of words.
 the game responds with number of correct letters.
 ## solver
 write a client that plays the game.  
